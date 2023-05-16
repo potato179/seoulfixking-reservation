@@ -1,5 +1,5 @@
 const http = require("http");
-const express = requiore("express");
+const express = require("express");
 const app = express();
 
 var hostname = "127.0.0.1";
@@ -15,7 +15,7 @@ process.argv.forEach(function(item, index){
 app.use('/public', express.static("public"));
 
 app.listen(port, hostname, () => {
-    console.log("서버 시작됨");
+    console.log(`http://${hostname}:${port}/ 에서 서버 작동중`);
 });
 
 app.get("/", function(req, res, next){
