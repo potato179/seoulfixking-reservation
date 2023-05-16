@@ -2,6 +2,9 @@ const http = require("http");
 const express = require("express");
 const app = express();
 
+const ps_login = require("./ps_login.js");
+const ps_member = require("./ps_member.js");
+
 var hostname = "127.0.0.1";
 var port = 5000;
 
